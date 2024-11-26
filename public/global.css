@@ -1,0 +1,43 @@
+:root {
+    --ff: "Syne", sans-serif;
+    --ff2: "Fira Code", monospace;
+    --h1: 800 2rem/1.2em var(--ff);
+    --p: 400 1rem/1.5em var(--ff);
+    --p-code: 300 .7rem/2em var(--ff2);
+    --hue: 0;
+  
+/* The formula starts here */
+    --tertiary-hue: calc(var(--hue) + 300);
+    --accent-hue: calc(var(--hue) + 60);
+
+
+    --primary-color: hsl(var(--hue), 50%, 90%);
+    --ligher-primary-color: hsl(var(--hue), 50%, 95%);
+    --pre-primary-color: hsl(var(--hue), 50%, 95%);
+    --secondary-color: hsl(var(--hue), 50%, 10%);
+    --tertiary-color: hsl(var(--tertiary-hue), 80%, 20%);
+    --accent-color: hsl(var(--accent-hue), 80%, 20%);
+
+	--tertiary-color-transparent: hsla(var(--tertiary-hue), 80%, 20%, 30%);
+	--accent-color-transparent: hsla(var(--accent-hue), 80%, 20%, 30%);
+}
+
+.dark {
+    --primary-color: hsl(var(--hue), 50%, 10%);
+    --ligher-primary-color: hsl(var(--hue), 50%, 15%);
+    --pre-primary-color: hsl(var(--hue), 50%, 15%);
+    --secondary-color: hsl(var(--hue), 50%, 90%);
+    --tertiary-color: hsl(var(--tertiary-hue), 80%, 80%);
+    --accent-color: hsl(var(--accent-hue), 80%, 80%);
+
+	--tertiary-color-transparent: hsla(var(--tertiary-hue), 80%, 20%, 0.9);
+	--accent-color-transparent: hsla(var(--accent-hue), 80%, 20%, 0.9);
+}
+
+body{
+	background-color: var(--ligher-primary-color);
+
+}
+p h1 h2{
+	color: var(--secondary-color);
+}

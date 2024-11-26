@@ -1,0 +1,22 @@
+
+/*
+:root {
+	--color-primary: hsl(220, 50%, 90%);
+	--color-secondary: hsl(220, 50%, 10%);
+	--color-tertiary: hsl(280, 80%, 20%);
+	--color-accent: hsl(160, 80%, 20%);
+}
+.dark {
+	--color-primary: hsl(220, 50%, 10%);
+	--color-secondary: hsl(220, 50%, 90%);
+	--color-tertiary: hsl(280, 80%, 80%);
+	--color-accent: hsl(160, 80%, 80%);
+}
+
+body{
+	background-color: var(--color-primary);
+
+}
+p h1 h2{
+	color: var(--color-secondary);
+}
